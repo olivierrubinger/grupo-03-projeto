@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <!--GOOGLE FONTS-->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!--FIM GOOGLE FONTS-->
+    <!--ICONS-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+     <!--ICONS-->
+    <title>WalkPet</title>
+</head>
+<body>
+    <header>
+        <div class="interface">
+            <div class="logo">
+                <a href="index.HTML">
+                    <img src="imgs/walkpet 1.png" alt="Logo walkpet apenas escrito">
+                </a>
+            </div><!--logo-->
+            <div class="icone-menu">
+                <label for="btn-menu" class="icone-menu"><i class="fa-solid fa-bars"></i></label>
+            </div><!--icone-menu-->
+        </div><!--menu-->
+    </header>
+    <input type="checkbox" id="btn-menu">
+    <div class="container-menu">
+        <div class="cont-menu">
+            <nav>
+                <a href="login.HTML"><i class="fa-solid fa-user"></i> Perfil</a>
+                <a href="#"><i class="fa-solid fa-person"></i> Passeadores</a>
+                <a href="#"><i class="fa-solid fa-gear"></i> Configuraçôes</a>
+                <a href="#"><i class="fa-solid fa-question"></i> Ajuda</a>
+            </nav>
+            <label for="btn-menu" class="icone-fechar"><i class="fa-solid fa-xmark"></i></label>
+        </div>
+    </div><!--container-menu-->
+    <main>
+       <section class="topo-do-site">
+        <div class="interface">
+            <div class="flex">
+                <div class="esquerda">
+                    <h1>Procurando por um</h1>
+                    <h2>passeador na sua área?</h2>        
+                </div><!--esquerda-->
+                <div class="meio">
+                    <img src="imgs/walkpet_logo_transparent 2 1.png" alt="Logo walkpet">
+                </div><!--meio-->
+                <div class="direita">
+                    <h3>Você encontra aqui!</h3>
+                    <button>Clique para saber mais!</button>
+                </div><!--direita-->
+            </div><!--flex-->
+        </div><!--interface-->
+        <div class="animais-topo">
+            <img id=cachorro-azul src="imgs/cachorro azul.png" alt="cachorro" >
+            <img id=gato-azul src="imgs/gato azul.png" alt="gato">
+            </div>
+       </section><!--Topo-do-site-->
+       <hr>
+       <section class="parte-de-baixo">
+        <div class="interface">
+            <div class="flex">
+                <div class="search-box">
+                    <input type="text" class="search-txt" placeholder="buscar por passeadores">
+                    <a href="#">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </a>
+                </div><!--search-box-->
+            </div><!--flex-->
+            <div class="animais-baixo">
+                    <img id="animal-esquerda" src="imgs/gato branco.png" alt="gato branco">
+                    <img id= animal-direita src="imgs/gato azul e branco.png" alt="gato azul e branco">
+            </div>
+            <div class="btn-baixo">
+                <button>Preciso de um passeador</button>
+                <button>Sou um passeador</button>
+                <button>Desejo contactar</button>
+            </div><!--btn-baixo-->
+        </div><!--interface-->
+       </section><!--parte-de-baixo-->
+    </main>
+</body>
+</html>

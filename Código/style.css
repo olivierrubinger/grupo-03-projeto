@@ -1,0 +1,234 @@
+
+/* GERAL */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+.interface{
+    max-width: 1280px;
+    margin: 0 auto;
+}
+/* Menu do site*/
+main .interface{
+    margin-bottom: -30px;
+    
+}
+header{
+    padding: 0 auto;
+    background-color: #9FEDDE;
+}
+header >.interface{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+header a img{
+    width: 200px;
+    margin-top: 10px;
+}
+header .interface .icone-menu i{ 
+    color: #2152666e;
+    font-size: 30px;
+}
+header .interface .icone-menu i:hover{
+    cursor: pointer;
+    color: #215266; 
+    transform: scale(1.08);
+    transition: .2s;
+}
+/* FIM MENU DO SITE */
+/* MENU LATERAL */
+#btn-menu{
+    display: none;
+}
+body .container-menu{
+position: absolute;
+background-color:rgba(0,0,0,0.5);
+width: 100%;
+height: 100vh;
+top: 0; left: 0;
+transition: all 500ms ease;
+opacity: 0;
+visibility: hidden;
+}
+#btn-menu:checked ~ .container-menu{
+    opacity: 1;
+visibility: visible;
+}
+.cont-menu{
+    width: 100%;
+    max-width: 250px;
+    background-color:#9FEDDE;
+    height: 100vh;
+    position: relative;
+    transition: all 500ms ease;
+    transform: translateX(-100%);
+}
+#btn-menu:checked ~ .container-menu .cont-menu{
+    transform: translateX(0%);
+}
+.cont-menu nav{
+transform: translateY(15%);
+}
+.cont-menu nav a{
+    display:block;
+    text-decoration: none;
+    padding: 20px;
+    color: #215266;
+    font-weight: bold;
+    border-left: 5px solid transparent;
+    transition: all 400ms ease;
+}
+.cont-menu nav a:hover{
+    border-left: 5px solid #215266;
+    background-color: #21526636;
+}
+.cont-menu label{
+    position: absolute;
+    right: 5px;
+    top: 10px;
+    color: #215266;
+    cursor: pointer;
+    font-size: 18px;
+}
+/* FIM MENU LATERAL */
+/* Topo do site */
+section .flex{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+section .flex .esquerda{
+    line-height: 32px;
+}
+section .flex .esquerda h1{
+    color: #215266;
+}
+section .flex .esquerda h2{
+    color: #215266;
+    padding-left: 40px;
+}
+section .flex .meio img{
+    width: 300px;
+}
+section .flex .direita h3{
+    color: #215266;
+    padding-right: 100px;
+    font-size: 23px;
+    padding-bottom: 10px;
+}
+.direita button{
+    padding: 10px 10px;
+    font-weight:bold;
+    font-size: 15px;
+    color: white;
+    background-color: rgb(255, 142, 142);
+    border: 0;
+    border-radius: 10px;
+}
+.direita button:hover{
+    cursor: pointer;
+    transition: .2s;
+    transform: scale(1.02);
+    background-color: red;
+}
+hr{
+   border-top: 3px solid #215266;
+}
+.animais-topo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#gato-azul{
+    width: 90px;
+}
+#cachorro-azul{
+    width: 100px;
+}
+/* FIM TOPO SITE */
+
+/* PARTE DE BAIXO */
+.parte-de-baixo .flex .search-box{
+    margin-top: 50px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    overflow: none;
+}
+.parte-de-baixo .flex .search-txt{
+    padding: 5px 20px;
+    border: 2px solid #215266;
+    border-radius: 30px;
+    width: 450px;
+}
+main div .animais-baixo{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: -80px;
+}
+#animal-esquerda{
+    width: 80px;
+    margin-left: 200px;
+    margin-bottom: -8px;
+}
+#animal-direita{
+    width: 80px;
+    margin-right: 100px;
+}
+section  a i{
+    color: black;
+}
+section  a i:hover{
+    transition: .2s;
+    transform: scale(1.2);
+}
+.btn-baixo{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 80px;
+}
+.btn-baixo button{
+    background-color: #9FEDDE;
+    color: #215266;
+    padding: 10px 10px;
+    width: 300px;
+    font-weight: bolder;
+    font-size: 20px;
+    border: 0;
+    border-radius: 8px;
+}
+.btn-baixo button:hover{
+    cursor: pointer;
+    background-color: #215266;
+    color: #9FEDDE;
+    transition: .2s;
+    transform: scale(1.02);
+}
+/* FIM PARTE DE BAIXO */
+
+/* Página LOGIN */
+main div .login{
+    margin-left: 200px;
+}
+main div .login img{
+    position: absolute;
+    top: 100px; left: 210px;
+    width: 140px;
+}
+main .pagina-login h2{
+    position: absolute;
+    top: 130px; left: 320px;
+    color: #215266;
+    font-size: 50px;
+    font-weight: bold;
+}
+.container-entrar{
+    position: absolute;
+    top: 210px; left: 320px;
+}
