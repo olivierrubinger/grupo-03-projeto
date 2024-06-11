@@ -1,4 +1,7 @@
-
+:root{
+    --light-blue: #BAEFDD;
+    --dark-blue: #215266;
+}
 /* GERAL */
 *{
     margin: 0;
@@ -231,4 +234,40 @@ main .pagina-login h2{
 .container-entrar{
     position: absolute;
     top: 210px; left: 320px;
+}
+
+section .walkers-top{
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+}
+
+.walkers-top-text {
+    margin: 30px;
+}
+.walkers-top-text a.home{
+    text-decoration: none;
+    color: var(--light-blue);
+    font-weight: bolder;
+}
+
+.walkers-top-text a.home:hover{
+    text-decoration: underline;
+}
+
+.walkers-top-text a.passeadores{
+    text-decoration: none;
+    color: var(--dark-blue);
+    font-weight: bolder;
+}
+
+.walkers-top-text a.passeadores:hover{
+    text-decoration: underline;
+}
+
+.walkers-top-logo{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+
 }
