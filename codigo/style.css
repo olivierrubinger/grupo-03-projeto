@@ -269,5 +269,62 @@ section .walkers-top{
     display: flex;
     text-align: center;
     justify-content: center;
+    margin-right: 33rem;
+}
 
+.walkers-top-logo img{
+    object-fit: contain;
+    width: 350px;
+}
+
+.cards{
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    margin: 50px 150px;
+}
+.card-walkers{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-between;
+}
+
+.card-walkers img{
+    border-radius: 50%;
+    width: 130px;
+    height: 130px;
+    object-fit: cover;
+    display:grid;
+    text-align: center;
+    justify-content: center;
+    border-style: solid;
+    border-color: var(--dark-blue);
+    border-width: 5px;
+}
+
+.card-walkers h2{
+    color: var(--dark-blue);
+    font-size: 20px;
+}
+
+.card-walkers i{
+    color: var(--dark-blue);
+    font-size: 20px;
+}
+
+.card-walkers button{
+    padding: 5px 30px;
+    background: var(--light-blue);
+    color: var(--dark-blue);
+    font-weight: bolder;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+}
+.card-walkers button:hover{
+    background: var(--dark-blue);
+    color: var(--light-blue);
+    transition: .3s;
+    transform: scale(1.1);
 }
