@@ -1,73 +1,117 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <!--GOOGLE FONTS-->
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <!--FIM GOOGLE FONTS-->
-    <!--ICONS-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-     <!--ICONS-->
-    <title>WalkPet</title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="css/login.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- FIM GOOGLE FONTS -->
+    <!-- ICONS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- ICONS -->
+    <title>WalkPet - Login</title>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const logged = localStorage.getItem("logged");
+        if (logged === "true") {
+          alert("Você já está logado!");
+          window.location.href = "index.html"; // Redireciona para a página inicial
+        }
+      });
+    </script>
+    <script src="scripts/login.js" defer></script>
+  </head>
+  <body>
     <header>
-        <div class="interface">
-            <div class="logo">
-                <a href="index.html">
-                    <img src="imgs/walkpet 1.png" alt="Logo walkpet apenas escrito">
-                </a>
-            </div><!--logo-->
-            <div class="icone-menu">
-                <label for="btn-menu" class="icone-menu"><i class="fa-solid fa-bars"></i></label>
-            </div><!--icone-menu-->
-        </div><!--menu-->
-    </header>
-    <input type="checkbox" id="btn-menu">
-    <div class="container-menu">
-        <div class="cont-menu">
-            <nav>
-                <a href="index.html"><i class="fa-solid fa-house"></i> Home</a>
-                <a href="login.html"><i class="fa-solid fa-user"></i> Perfil</a>
-                <a href="passeadores.html"><i class="fa-solid fa-person"></i> Passeadores</a>
-                <a href="#"><i class="fa-solid fa-gear"></i> Configuraçôes</a>
-                <a href="#"><i class="fa-solid fa-question"></i> Ajuda</a>
-            </nav>
-            <label for="btn-menu" class="icone-fechar"><i class="fa-solid fa-xmark"></i></label>
+      <div class="interface">
+        <div class="logo">
+          <a href="index.html">
+            <img src="imgs/walkpet 1.png" alt="Logo walkpet apenas escrito" />
+          </a>
         </div>
-    </div><!--container-menu-->
-<main>
-    <section>
-        <div class="pagina-login">
-            <div class="interface">
-            <div class="login">
-            <img src="imgs/Pata cachorro.png" alt="Pata cachorro">
-            <div class="container-login"></div>
-            <h2>LOGIN</h2>
-            <form action="action_page.php" method="post">
-                <div class="container-entrar">
-                  <input type="text" placeholder="E-mail ou CPF" name="uname" required>
-                  <br>
-                  <input type="password" placeholder="Senha" name="psw" required>
-                  <br>
-                  <label>
-                    <input type="checkbox" checked="checked" name="remember"> Lembrar identificação de usuário
-                  </label>
-                  <div class="container" style="background-color:#f1f1f1">
-                    <span class="psw"><a href="#">Esqueceu sua senha?</a></span>
-                    <br>
-                    <button type="submit">Entrar</button>
-                  </div>
+        <!--logo-->
+        <div class="icone-menu">
+          <label for="btn-menu" class="icone-menu"
+            ><i class="fa-solid fa-bars"></i
+          ></label>
+        </div>
+        <!--icone-menu-->
+      </div>
+      <!--menu-->
+    </header>
+    <input type="checkbox" id="btn-menu" />
+    <div class="container-menu">
+      <div class="cont-menu">
+        <nav>
+          <a href="index.html"><i class="fa-solid fa-house"></i> Home</a>
+          <a id="login-link" href="login.html"
+            ><i class="fa-solid fa-user"></i> Login</a
+          >
+          <a href="passeadores.html"
+            ><i class="fa-solid fa-person"></i> Passeadores</a
+          >
+          <a href="#"><i class="fa-solid fa-gear"></i> Configurações</a>
+          <a href="#"><i class="fa-solid fa-question"></i> Ajuda</a>
+          <a id="logout-link" href="#" style="display: none"
+            ><i class="fa-solid fa-sign-out"></i> Logout</a
+          >
+        </nav>
+        <label for="btn-menu" class="icone-fechar"
+          ><i class="fa-solid fa-xmark"></i
+        ></label>
+      </div>
+    </div>
+    <!--container-menu-->
+    <script src="scripts/menu.js" defer></script>
+    <main>
+      <section>
+        <div class="login-page">
+          <div class="login-container">
+            <div class="login-box">
+              <img src="imgs/Pata cachorro.png" alt="Pata cachorro" />
+              <h2>LOGIN</h2>
+              <form id="loginForm">
+                <div class="login-fields">
+                  <input
+                    type="text"
+                    placeholder="Nome de Usuário"
+                    id="nomeUsuario"
+                    required
+                  />
+                  <br />
+                  <input
+                    type="password"
+                    placeholder="Senha"
+                    id="senha"
+                    required
+                  />
+                  <br />
+                  <button type="submit">Entrar</button>
+                  <br />
+                  <a href="cadastro.html" id="cadastroLink"
+                    >Não tem uma conta? Cadastre-se</a
+                  >
                 </div>
               </form>
             </div>
-            </div><!--login-->
-            </div><!---interface-->
-        </div><!--pagina-login-->
-    </section>
-</main>
-</body>
+          </div>
+          <!--login-box-->
+        </div>
+        <!--login-container-->
+      </section>
+    </main>
+  </body>
+</html>

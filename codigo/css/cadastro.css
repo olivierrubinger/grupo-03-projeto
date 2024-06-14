@@ -1,0 +1,70 @@
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.pagina-cadastro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f7f7f7;
+}
+
+.interface-2 {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  max-width: 500px;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.cadastro img {
+  display: block;
+  margin: 0 auto 20px;
+}
+
+.container-cadastro {
+  display: flex;
+  flex-direction: column;
+}
+
+.container-cadastro input[type="text"],
+.container-cadastro input[type="email"],
+.container-cadastro input[type="password"] {
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 100%;
+}
+
+.container-cadastro input[type="file"] {
+  display: none;
+}
+
+.container-cadastro label {
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.container-cadastro button {
+  padding: 10px;
+  margin-top: 20px;
+  background-color: #28a745;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+}
+
+.container-cadastro button:hover {
+  background-color: #218838;
+}

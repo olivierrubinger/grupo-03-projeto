@@ -1,0 +1,134 @@
+/* Topo do site */
+section .flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+section .flex .esquerda {
+  line-height: 32px;
+}
+
+section .flex .esquerda h1 {
+  color: #215266;
+}
+
+section .flex .esquerda h2 {
+  color: #215266;
+  padding-left: 40px;
+}
+
+section .flex .meio img {
+  width: 300px;
+}
+
+section .flex .direita h3 {
+  color: #215266;
+  padding-right: 100px;
+  font-size: 23px;
+  padding-bottom: 10px;
+}
+
+.direita button {
+  padding: 10px 10px;
+  font-weight: bold;
+  font-size: 15px;
+  color: white;
+  background-color: rgb(255, 142, 142);
+  border: 0;
+  border-radius: 10px;
+}
+
+.direita button:hover {
+  cursor: pointer;
+  transition: 0.2s;
+  transform: scale(1.02);
+  background-color: red;
+}
+
+hr {
+  border-top: 3px solid #215266;
+}
+
+.animais-topo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#gato-azul {
+  width: 90px;
+}
+
+#cachorro-azul {
+  width: 100px;
+}
+
+/* Parte de Baixo */
+.parte-de-baixo .flex .search-box {
+  margin-top: 50px;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+.parte-de-baixo .flex .search-txt {
+  padding: 5px 20px;
+  border: 2px solid #215266;
+  border-radius: 30px;
+  width: 450px;
+}
+
+main div .animais-baixo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: -80px;
+}
+
+#animal-esquerda {
+  width: 80px;
+  margin-left: 200px;
+  margin-bottom: -8px;
+}
+
+#animal-direita {
+  width: 80px;
+  margin-right: 100px;
+}
+
+section a i {
+  color: black;
+}
+
+section a i:hover {
+  transition: 0.2s;
+  transform: scale(1.2);
+}
+
+.btn-baixo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 80px;
+}
+
+.btn-baixo button {
+  background-color: #9fedde;
+  color: #215266;
+  padding: 10px 10px;
+  width: 300px;
+  font-weight: bolder;
+  font-size: 20px;
+  border: 0;
+  border-radius: 8px;
+}
+
+.btn-baixo button:hover {
+  cursor: pointer;
+  background-color: #215266;
+  color: #9fedde;
+  transition: 0.2s;
+  transform: scale(1.02);
+}

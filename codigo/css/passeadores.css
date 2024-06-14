@@ -1,0 +1,94 @@
+/* CSS exclusivo para a página de passeadores */
+
+/* Configurações básicas */
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.walkers-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #f7f7f7;
+}
+
+.walkers-top-text {
+    margin: 0 20px;
+}
+
+.walkers-top-text a {
+    text-decoration: none;
+    color: var(--dark-blue);
+    font-weight: bold;
+    margin: 0 10px;
+}
+
+.walkers-top-text a:hover {
+    text-decoration: underline;
+}
+
+.walkers-top-logo img {
+    max-width: 200px;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    background-color: #f7f7f7;
+}
+
+.card-walkers {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    padding: 20px;
+    text-align: center;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card-walkers img {
+    border-radius: 50%;
+    width: 130px;
+    height: 130px;
+    object-fit: cover;
+    border: 3px solid var(--dark-blue);
+    margin-bottom: 10px;
+}
+
+.card-walkers h2 {
+    color: var(--dark-blue);
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+.card-walkers .stars {
+    margin-bottom: 10px;
+}
+
+.card-walkers .stars i {
+    color: var(--dark-blue);
+    margin: 0 2px;
+}
+
+.card-walkers button {
+    background-color: var(--light-blue);
+    color: var(--dark-blue);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.card-walkers button:hover {
+    background-color: var(--dark-blue);
+    color: var(--light-blue);
+    transition: 0.3s;
+    transform: scale(1.05);
+}

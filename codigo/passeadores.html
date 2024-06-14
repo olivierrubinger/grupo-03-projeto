@@ -1,113 +1,96 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <!--GOOGLE FONTS-->
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <!--FIM GOOGLE FONTS-->
-    <!--ICONS-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-     <!--ICONS-->
-    <title>WalkPet</title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="css/passeadores.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- FIM GOOGLE FONTS -->
+    <!-- ICONS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- ICONS -->
+    <title>WalkPet - Passeadores</title>
+  </head>
+  <body>
     <header>
-        <div class="interface">
-            <div class="logo">
-                <a href="index.html">
-                    <img src="imgs/walkpet 1.png" alt="Logo walkpet apenas escrito">
-                </a>
-            </div><!--logo-->
-            <div class="icone-menu">
-                <label for="btn-menu" class="icone-menu"><i class="fa-solid fa-bars"></i></label>
-            </div><!--icone-menu-->
-        </div><!--menu-->
-    </header>
-    <input type="checkbox" id="btn-menu">
-    <div class="container-menu">
-        <div class="cont-menu">
-            <nav>
-                <a href="index.html"><i class="fa-solid fa-house"></i> Home</a>
-                <a href="login.html"><i class="fa-solid fa-user"></i> Perfil</a>
-                <a href="passeadores.html"><i class="fa-solid fa-person"></i> Passeadores</a>
-                <a href="#"><i class="fa-solid fa-gear"></i> Configuraçôes</a>
-                <a href="#"><i class="fa-solid fa-question"></i> Ajuda</a>
-            </nav>
-            <label for="btn-menu" class="icone-fechar"><i class="fa-solid fa-xmark"></i></label>
+      <div class="interface">
+        <div class="logo">
+          <a href="index.html">
+            <img src="imgs/walkpet 1.png" alt="Logo walkpet apenas escrito" />
+          </a>
         </div>
-    </div><!--container-menu-->
+        <!--logo-->
+        <div class="icone-menu">
+          <label for="btn-menu" class="icone-menu"
+            ><i class="fa-solid fa-bars"></i
+          ></label>
+        </div>
+        <!--icone-menu-->
+      </div>
+      <!--menu-->
+    </header>
+    <input type="checkbox" id="btn-menu" />
+    <div class="container-menu">
+      <div class="cont-menu">
+        <nav>
+          <a href="index.html"><i class="fa-solid fa-house"></i> Home</a>
+          <a id="login-link" href="login.html"
+            ><i class="fa-solid fa-user"></i> Login</a
+          >
+          <a href="passeadores.html"
+            ><i class="fa-solid fa-person"></i> Passeadores</a
+          >
+          <a href="#"><i class="fa-solid fa-gear"></i> Configurações</a>
+          <a href="#"><i class="fa-solid fa-question"></i> Ajuda</a>
+          <a id="logout-link" href="#" style="display: none"
+            ><i class="fa-solid fa-sign-out"></i> Logout</a
+          >
+        </nav>
+        <label for="btn-menu" class="icone-fechar"
+          ><i class="fa-solid fa-xmark"></i
+        ></label>
+      </div>
+    </div>
+    <!--container-menu-->
+    <script src="scripts/menu.js" defer></script>
     <main>
-        <section> <!------------TOPO------------->
-            <div class="walkers-top">
-                <div class="walkers-top-text">
-                    <a href="index.html" class="home">
-                    Home
-                    </a>
-                    <a href="passeadores.html" class="passeadores">> Passeadores</a>
-                </div>
-                <div class="walkers-top-logo">
-                    <img src="imgs/walkpet_logo_transparent 2 1.png" alt="Logo walkpet">
-                </div>
-            </div>
-        </section> <!------------FIM TOPO------------->
-        <section><!--------------BAIXO----------------->
-            <div class="cards">
-                <div class="card-walkers">
-                <img src="imgs/Bernardo.png" alt="Bernardo">
-                <div class="stars">
-                    <h2>Bernardo</h2>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <br><button>Saiba mais</button>
-                </div>
-            </div>
-            <div class="card-walkers">
-                <img src="imgs/Luisa.png" alt="Luisa">
-                <div class="stars">
-                    <h2>Luisa</h2>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                    <br><button>Saiba mais</button>
-                </div>
-            </div>
-            <div class="card-walkers">
-                <img src="imgs/Maria.png" alt="Maria">
-                <div class="stars">
-                    <h2>Maria</h2>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                    <br><button>Saiba mais</button>
-                </div>
-            </div>
-            <div class="card-walkers">
-                <img src="imgs/Paulo.png" alt="Paulo">
-                <div class="stars">
-                    <h2>Paulo</h2>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <br><button>Saiba mais</button>
-                </div>
-            </div>
-
-            </div>
-            
-        </section><!--------------FIM BAIXO------------->
+      <section>
+        <!-- Topo -->
+        <div class="walkers-top">
+          <div class="walkers-top-text">
+            <a href="index.html" class="home"> Home </a>
+            <a href="passeadores.html" class="passeadores">> Passeadores</a>
+          </div>
+          <div class="walkers-top-logo">
+            <img
+              src="imgs/walkpet_logo_transparent 2 1.png"
+              alt="Logo walkpet"
+            />
+          </div>
+        </div>
+      </section>
+      <!-- Topo -->
+      <section>
+        <!-- Cards dos Passeadores -->
+        <div class="cards" id="cardsContainer">
+          <!-- Os cards serão inseridos aqui dinamicamente -->
+        </div>
+      </section>
+      <!-- Fim dos Cards dos Passeadores -->
     </main>
-</body>
+    <script src="scripts/passeadores.js" defer></script>
+  </body>
 </html>
