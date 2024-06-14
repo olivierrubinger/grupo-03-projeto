@@ -5,9 +5,14 @@ document.addEventListener("DOMContentLoaded", function () {
       const reader = new FileReader();
       reader.onload = function (e) {
         const fotoPreview = document.getElementById("fotoPreview");
-        fotoPreview.src = e.target.result;
-        fotoPreview.style.display = "block";
-        document.getElementById("fotoLabel").textContent = "Foto Selecionada";
+        if (fotoPreview) {
+          fotoPreview.src = e.target.result;
+          fotoPreview.style.display = "block";
+        }
+        const fotoLabel = document.getElementById("fotoLabel");
+        if (fotoLabel) {
+          fotoLabel.textContent = "Foto Selecionada";
+        }
       };
       reader.readAsDataURL(file);
     }
@@ -43,14 +48,21 @@ document.addEventListener("DOMContentLoaded", function () {
         salvarPasseador(passeador);
       }
     });
-});
 
-function salvarPasseador(passeador) {
-  let passeadores = JSON.parse(localStorage.getItem("passeadores")) || [];
-  passeadores.push(passeador);
-  localStorage.setItem("passeadores", JSON.stringify(passeadores));
-  alert("Cadastro realizado com sucesso!");
-  document.getElementById("cadastroForm").reset();
-  document.getElementById("fotoLabel").textContent = "Upload de Foto";
-  document.getElementById("fotoPreview").style.display = "none";
-}
+  function salvarPasseador(passeador) {
+    let passeadores = JSON.parse(localStorage.getItem("passeadores")) || [];
+    passeadores.push(passeador);
+    localStorage.setItem("passeadores", JSON.stringify(passeadores));
+    alert("Cadastro realizado com sucesso!");
+    document.getElementById("cadastroForm").reset();
+    const fotoLabel = document.getElementById("fotoLabel");
+    if (fotoLabel) {
+      fotoLabel.textContent = "Upload de Foto";
+    }
+    const fotoPreview = document.getElementById("fotoPreview");
+    if (fotoPreview) {
+      fotoPreview.style.display = "none";
+    }
+    window.location.href = "login.html"; // Redireciona para a página de login após o cadastro
+  }
+});

@@ -1,0 +1,80 @@
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #f7f7f7;
+}
+
+.perfil-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.perfil-container {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 400px;
+  text-align: center;
+  margin-top: -300px;
+}
+
+.perfil-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.perfil-header img {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border: 3px solid var(--dark-blue);
+  margin-bottom: 10px;
+}
+
+.perfil-header h1 {
+  color: var(--dark-blue);
+  font-size: 24px;
+  margin: 10px 0;
+}
+
+.perfil-detalhes p {
+  color: #555;
+  margin: 10px 0;
+}
+
+.perfil-descricao {
+  margin-top: 20px;
+}
+
+.perfil-descricao h2 {
+  color: var(--dark-blue);
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.perfil-descricao p {
+  color: #555;
+  margin: 10px 0;
+  text-align: center;
+}
+
+#enviar-email-btn {
+  background-color: var(--light-blue);
+  color: var(--dark-blue);
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+#enviar-email-btn:hover {
+  background-color: var(--dark-blue);
+  color: var(--light-blue);
+  transition: 0.3s;
+  transform: scale(1.05);
+}

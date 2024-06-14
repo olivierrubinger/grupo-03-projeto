@@ -27,6 +27,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
     const button = document.createElement("button");
     button.textContent = "Saiba mais";
+    button.addEventListener("click", function () {
+      window.location.href = `passeador.html?id=${passeador.nomeUsuario}`;
+    });
 
     starsDiv.appendChild(name);
     starsDiv.appendChild(button);

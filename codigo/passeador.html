@@ -4,12 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="css/passeadores.css" />
+    <link rel="stylesheet" href="css/passeador.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <!-- GOOGLE FONTS -->
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
       rel="stylesheet"
     />
     <!-- FIM GOOGLE FONTS -->
@@ -22,7 +22,7 @@
       referrerpolicy="no-referrer"
     />
     <!-- ICONS -->
-    <title>WalkPet - Passeadores</title>
+    <title>WalkPet - Passeador</title>
   </head>
   <body>
     <header>
@@ -66,30 +66,30 @@
     <!--container-menu-->
     <script src="scripts/menu.js" defer></script>
     <main>
-      <section>
-        <!-- Topo -->
-        <div class="walkers-top">
-          <div class="walkers-top-text">
-            <a href="index.html" class="home"> Home </a>
-            <a href="passeadores.html" class="passeadores">> Passeadores</a>
-          </div>
-          <div class="walkers-top-logo">
+      <section class="perfil-section">
+        <div class="perfil-container">
+          <div class="perfil-header">
             <img
-              src="imgs/walkpet_logo_transparent 2 1.png"
-              alt="Logo walkpet"
+              id="perfil-foto"
+              src="imgs/default-profile.png"
+              alt="Foto do perfil"
             />
+            <h1 id="perfil-nome">Nome do Passeador</h1>
           </div>
+          <div class="perfil-detalhes">
+            <p>
+              <strong>Email:</strong>
+              <span id="perfil-email">email@example.com</span>
+            </p>
+          </div>
+          <div class="perfil-descricao">
+            <h2>Descrição</h2>
+            <p id="perfil-descricao">Descrição do passeador...</p>
+          </div>
+          <button id="enviar-email-btn">Enviar Email</button>
         </div>
       </section>
-      <!-- Topo -->
-      <section>
-        <!-- Cards dos Passeadores -->
-        <div class="cards" id="cardsContainer">
-          <!-- Os cards serão inseridos aqui dinamicamente -->
-        </div>
-      </section>
-      <!-- Fim dos Cards dos Passeadores -->
     </main>
-    <script src="scripts/passeadores.js" defer></script>
+    <script src="scripts/passeador.js" defer></script>
   </body>
 </html>

@@ -15,6 +15,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
       if (user) {
         localStorage.setItem("logged", "true");
+        localStorage.setItem("loggedUser", nomeUsuario);
         alert("Login realizado com sucesso!");
         window.location.href = "index.html"; // Redireciona para a página inicial após login
       } else {
