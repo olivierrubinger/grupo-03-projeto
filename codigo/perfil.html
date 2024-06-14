@@ -9,7 +9,7 @@
     <!-- GOOGLE FONTS -->
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800&display=swap"
       rel="stylesheet"
     />
     <!-- FIM GOOGLE FONTS -->
@@ -87,6 +87,47 @@
             <p id="perfil-descricao">Descrição do passeador...</p>
           </div>
           <button id="editar-perfil-btn">Editar Perfil</button>
+        </div>
+
+        <!-- Formulário de Edição de Perfil -->
+        <div
+          class="editar-perfil-container"
+          id="editarPerfilContainer"
+          style="display: none"
+        >
+          <h2>Editar Perfil</h2>
+          <form id="editarPerfilForm" enctype="multipart/form-data">
+            <div>
+              <input type="text" id="editarNome" placeholder="Nome" required />
+            </div>
+            <div>
+              <input
+                type="email"
+                id="editarEmail"
+                placeholder="Email"
+                required
+              />
+            </div>
+            <div>
+              <textarea
+                id="editarDescricao"
+                placeholder="Descrição"
+                required
+              ></textarea>
+            </div>
+            <div>
+              <input type="file" id="editarFoto" accept="image/*" />
+              <label for="editarFoto">Upload de Foto</label>
+              <img
+                id="editarFotoPreview"
+                src=""
+                alt="Pré-visualização da Foto"
+                style="display: none; max-width: 100px; margin-top: 10px"
+              />
+            </div>
+            <button type="submit">Salvar</button>
+            <button type="button" id="cancelarEdicaoBtn">Cancelar</button>
+          </form>
         </div>
       </section>
     </main>

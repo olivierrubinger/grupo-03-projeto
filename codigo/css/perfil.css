@@ -78,3 +78,76 @@ body {
   transition: 0.3s;
   transform: scale(1.05);
 }
+
+.editar-perfil-container {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 400px;
+  text-align: center;
+}
+
+.editar-perfil-container h2 {
+  color: var(--dark-blue);
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.editar-perfil-container form div {
+  margin-bottom: 15px;
+}
+
+.editar-perfil-container form input,
+.editar-perfil-container form textarea {
+  width: calc(100% - 20px);
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.editar-perfil-container form textarea {
+  resize: none;
+  height: 100px;
+}
+
+.editar-perfil-container form label {
+  display: block;
+  margin-bottom: 5px;
+  color: var(--dark-blue);
+}
+
+.editar-perfil-container form img {
+  display: block;
+  margin: 10px auto;
+  border: 3px solid var(--dark-blue);
+  border-radius: 10px;
+}
+
+.editar-perfil-container form button {
+  background-color: var(--light-blue);
+  color: var(--dark-blue);
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.editar-perfil-container form button:hover {
+  background-color: var(--dark-blue);
+  color: var(--light-blue);
+  transition: 0.3s;
+  transform: scale(1.05);
+}
+
+.editar-perfil-container form button[type="button"] {
+  background-color: #ddd;
+  color: #333;
+  margin-left: 10px;
+}
+
+.editar-perfil-container form button[type="button"]:hover {
+  background-color: #bbb;
+  color: #000;
+}
