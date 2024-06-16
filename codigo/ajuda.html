@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="css/passeador.css" />
+    <link rel="stylesheet" href="css/ajuda.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <!-- GOOGLE FONTS -->
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -22,7 +22,7 @@
       referrerpolicy="no-referrer"
     />
     <!-- ICONS -->
-    <title>WalkPet - Passeador</title>
+    <title>WalkPet - Ajuda</title>
   </head>
   <body>
     <header>
@@ -63,33 +63,35 @@
         ></label>
       </div>
     </div>
-    <!--container-menu-->
-    <script src="scripts/menu.js" defer></script>
     <main>
-      <section class="perfil-section">
-        <div class="perfil-container">
-          <div class="perfil-header">
-            <img
-              id="perfil-foto"
-              src="imgs/default-profile.png"
-              alt="Foto do perfil"
-            />
-            <h1 id="perfil-nome">Nome do Passeador</h1>
-          </div>
-          <div class="perfil-detalhes">
-            <p>
-              <strong>Email:</strong>
-              <span id="perfil-email">email@example.com</span>
-            </p>
-          </div>
-          <div class="perfil-descricao">
-            <h2>Descrição</h2>
-            <p id="perfil-descricao">Descrição do passeador...</p>
-          </div>
-          <button id="enviar-email-btn">Enviar Email</button>
-        </div>
-      </section>
+        <section>
+            <div class="ajuda-top">
+                <h1>Como podemos te ajudar?</h1>
+                <div class="animais-topo">
+                    <img src="imgs/cachorro azul.png" alt="">
+                    <img src="imgs/gato azul.png" alt="">
+                </div>
+                <div class="form-ajuda">
+                    <form action="POST">
+                        <input type="email" placeholder="E-mail" required><br>
+                        <input type="text" placeholder="Assunto" required><br>
+                        <textarea id="message" placeholder= "Mensagem" name="message" rows="6" required></textarea><br>
+                        <button type="submit">Enviar</button>
+                </div>
+                <div class="ajuda-contact">
+                <h2>Entre em contato conosco!</h2>
+                <div class="contact-card">
+                    <i class="fa-regular fa-envelope"></i>
+                    <h3>E-mail</h3>
+                    <p>walkpet@gmail.com</p>
+                </div>
+                <div class="contact-card">
+                    <i class="fa-solid fa-phone"></i>
+                    <h3>Telefone</h3>
+                    <p>+55 31 99991-1308</p>
+                </div>
+            </div>
+            
+            </div>
+        </section>
     </main>
-    <script src="scripts/passeador.js" defer></script>
-  </body>
-</html>
