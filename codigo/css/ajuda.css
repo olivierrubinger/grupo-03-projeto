@@ -1,56 +1,65 @@
-.ajuda-top{
-    color: #215266;
-    background: #ffffff;
-    padding: 30px 130px;
-    margin: 40px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-.ajuda-top h1{
-    display: flex;
-    justify-content: center;
-    font-size: 40px;
-}
- .animais-topo{
-    display: flex;
-    align-items: flex-end;
-    justify-content: space-between;
-}
-.animais-topo img{
-    width: 100px;
-}
-.form-ajuda{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-form{
-    display: flex;
-    flex-direction: column;
-}
-.form-ajuda input,textarea{
-    width: 1000px;
-    margin-bottom: -20px;
-    padding: 10px;
-    border: 2px solid #215266;
-    border-radius: 8px;
-    box-sizing: border-box; 
-}
-.form-ajuda button{
-    padding: 10px;
-    font-size: 20px;
-    color: #215266;
-    background: #9fedde;
-    border-radius: 8px;
-    border: none;
-    cursor: pointer;
-}
-.form-ajuda button:hover{
-    background: #215266;
-    color: #9fedde;
-    transition: .2s;
+.ajuda-top {
+  color: #215266;
+  background: #ffffff;
+  padding: 30px 130px;
+  margin: 40px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.contact-card i{
-    font-size: 30px;
+.ajuda-top h1 {
+  display: flex;
+  justify-content: center;
+  font-size: 40px;
+}
+
+.animais-topo {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+.animais-topo img {
+  width: 100px;
+}
+
+.form-ajuda {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-ajuda input,
+textarea {
+  width: 1000px;
+  margin-bottom: 20px; /* Ajustei a margem inferior para adicionar espaço */
+  padding: 10px;
+  border: 2px solid #215266;
+  border-radius: 8px;
+  box-sizing: border-box;
+}
+
+.form-ajuda button {
+  padding: 10px;
+  font-size: 20px;
+  color: #215266;
+  background: #9fedde;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+}
+
+.form-ajuda button:hover {
+  background: #215266;
+  color: #9fedde;
+  transition: 0.2s;
+}
+
+.contact-card i {
+  font-size: 30px;
 }
